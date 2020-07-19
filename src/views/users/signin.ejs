@@ -1,0 +1,107 @@
+<% include ../partials/_header %>
+
+	<!--================ Breadcumb Part HTML Start ======================-->
+
+	<section id="breadcumb" style="background:url(images/grid-view/banner.jpg) no-repeat center;background-size:cover;">
+		<div class="bnr-overlay">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 text-center p-0">
+						<h1>Login / Register</h1>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><i class="fas fa-angle-right"></i></li>
+							<li><a href="cart.html">Login / Register</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+  <!--================ Breadcumb Part HTML End ======================-->
+  
+
+  	<!--================ Login Part HTML Start ======================-->
+
+	<section id="login-page">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-md-6">
+					<h4>Login To Your Account</h4>
+					<form class="login">
+						<input type="email" class="text email" placeholder="Email">
+						<input type="password" class="text rememmr" placeholder="Password">
+						<div class="row">
+							<div class="col-lg-6 text-left col-6">
+								<label class="register">Remember me
+									<input type="checkbox">
+									<span class="checkmark"></span>
+								</label>
+							</div>
+							<div class="col-lg-6 text-right col-6">
+								<a href="#" class="forgot">Forgot Password ?</a>
+							</div>
+							<div class="col-lg-12 ph-btn">
+								<a href="#" class="abs-reflect">Log In</a>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="col-lg-6 order-details col-md-6">
+					<h4>Register Now <span>(If You haven't any account yet)</span></h4>
+					<form>
+						<input type="text" class="text regis" placeholder="Name">
+						<input type="email" class="text email regis2" placeholder="Email">
+						<input type="password" class="text phone regis" placeholder="Password">
+						<input type="password" class="text phone regis2 regis-mar" placeholder="Confirm Password">
+						<div class="row">
+							<div class="col-lg-12">
+								<label class="register">I accept all the term and conditions,
+									including privacy policy
+									<input type="checkbox">
+									<span class="checkmark"></span>
+								</label>
+							</div>
+							<div class="col-lg-12 ph-btn">
+								<a href="#" class="abs-reflect">Register Now</a>
+							</div>
+						</div>
+					</form>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<!--================ Login Part HTML End ======================-->
+
+
+<div class="row">
+    <div class="col-md-4 mx-auto mt-5 ">
+      <div class="card mt-4 text-center" style="margin-top: 90px">
+        <div class="card-header" >
+          <h1 class="h4">
+            Login
+          </h1>
+        </div>
+          <img class="rounded-circle mx-auto d-block logo m-4" src="/img/logo.png" alt="Logo">
+        <div class="card-body">
+          <form action="/users/signin" method="POST">
+            <div class="form-group">
+              <input type="email" class="form-control" name="email" placeholder="Email" autofocus>
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control" name="password" placeholder="Password">
+            </div>
+            <button class="btn btn-primary btn-block">
+              Signin 
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <% include ../partials/_footer %>
