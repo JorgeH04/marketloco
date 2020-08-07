@@ -2,39 +2,22 @@ const mongoose = require('mongoose');
 const { Schema } = mongoose;
 
 const NoteSchema = new Schema({
-  imagePath: {
-    type: String,
-    required: true
+  name: String,
+  title: String,
+  image: String,
+  imagedos: String,
+  imagetres: String,
+  description: String,
+  filtroprice: Number,
+  color: String,
+  colorstock: String,
+  oldprice: Number,
+  price: Number,
+  amount: Number,
+  status: {
+    type: Boolean,
+    default: false
   },
-  product: {
-    type: String,
-    required: true
-  },
-  color: {
-    type: String,
-    required: true
-  },
-  talle: {
-    type: String,
-    required: true
-  },
-  colorstock: {
-    type: String,
-    required: true
-  },
-  tallestock: {
-    type: String,
-    required: true
-  }, 
-  date: {
-    type: Date,
-    default: Date.now
-  },
-  price: {
-    type: Number,
-    required: true
-  }
-
 });
 
 module.exports = mongoose.model('Prodtres', NoteSchema);
