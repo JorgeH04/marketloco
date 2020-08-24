@@ -1,5 +1,20 @@
-<% include ../partials/_header %>
-
+<!DOCTYPE html>
+<html lang='en' xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Market Loco</title>
+    <link rel='stylesheet' href='/assets/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='/assets/css/owl.carousel.min.css'>
+    <link rel='stylesheet' href='/assets/css/animated.css'>
+    <link rel='stylesheet' href='/assets/css/font-awesome.css'>
+    <link rel='stylesheet' href='/assets/css/ui.css'>
+    <link rel='stylesheet' href='/assets/css/jquery.mmenu.all.css'>
+    <link rel='stylesheet' href='/assets/css/flaticon.css'>
+    <link rel='stylesheet' href='/assets/css/style.css'>
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i;Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+</head>
+<body>
 
 
 <div class="col-md-4 mx-auto">
@@ -56,36 +71,6 @@
   </div>
 </div>
 
-
-
-
-<div class="row mt-5">
-    <% proddos.forEach(function (proddo) { %>
-      <div class="col-md-3 ">
-       <div class="card"> 
-          <a href="/proddosbackend/<%= proddo.id %>">
-         <img class="card-img-top img-fluid" alt="img1" src="<%= proddo.image %>">
-          </a>
-          <div class="card-body">
-        <div class="card-heading"><%= proddo.product %></div>
-        <h4> $<%= proddo.price %>  </h4>
-        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit neque, mollitia dolorem. </p>
-        <a class="btn btn-pink text-light"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add To Cart</a> </div>
-        <a class="btn btn-danger" href="/proddos/delete/<%= proddo.id %>">
-          Eliminar
-        </a>
-        <a class="btn btn-primary" href="/proddos/edit/<%= proddo.id %>">
-          Editar
-        </a>
-        </div>
-  </div>
-  <% }) %>
-
-
-</div>
-     
-</div>
-</div>
 
 
 
